@@ -1,0 +1,427 @@
+{
+  "name": "Requirements",
+  "description": null,
+  "aliases": [],
+  "frameworks": [],
+  "subcategories": {
+    "Functional Requirements": {
+      "name": "Functional Requirements",
+      "description": "Requirements that specify what the system should do",
+      "aliases": [],
+      "frameworks": [
+        {
+          "name": "IEEE 830 Standard",
+          "authors": [
+            "IEEE"
+          ],
+          "year": 1998,
+          "definition": "Functional requirements define the fundamental actions that must take place in the software in accepting and processing the inputs and in processing and generating the outputs",
+          "keywords": [
+            "behavior",
+            "function",
+            "action",
+            "input",
+            "output",
+            "process",
+            "task",
+            "operation"
+          ],
+          "characteristics": [
+            "Describes what the system should do",
+            "Specifies functions that a system must perform",
+            "Defines system behavior",
+            "Focuses on user tasks and goals"
+          ],
+          "citation": "IEEE (1998). IEEE Recommended Practice for Software Requirements Specifications. IEEE Std 830-1998",
+          "examples": [],
+          "related_frameworks": [],
+          "notes": null
+        },
+        {
+          "name": "Sommerville's Software Engineering",
+          "authors": [
+            "Ian Sommerville"
+          ],
+          "year": 2016,
+          "definition": "Functional requirements are statements of services the system should provide, how the system should react to particular inputs, and how the system should behave in particular situations",
+          "keywords": [
+            "services",
+            "system behavior",
+            "inputs",
+            "outputs",
+            "reactions"
+          ],
+          "characteristics": [
+            "Describes system services",
+            "Specifies system reactions to inputs",
+            "May state what the system should not do"
+          ],
+          "citation": "Ian Sommerville (2016). Software Engineering. Pearson Education",
+          "examples": [],
+          "related_frameworks": [],
+          "notes": null
+        }
+      ],
+      "subcategories": {}
+    },
+    "Non-Functional Requirements": {
+      "name": "Non-Functional Requirements",
+      "description": "Requirements that specify how the system should behave or qualities it should have",
+      "aliases": [],
+      "frameworks": [],
+      "subcategories": {
+        "Performance": {
+          "name": "Performance",
+          "description": "System performance characteristics like speed, throughput, response time",
+          "aliases": [],
+          "frameworks": [
+            {
+              "name": "NFR Framework",
+              "authors": [
+                "Lawrence Chung",
+                "Brian Nixon",
+                "Eric Yu",
+                "John Mylopoulos"
+              ],
+              "year": 2000,
+              "definition": "Performance refers to the speed of operation of a system. It includes throughput (number of transactions processed per unit time) and response time (time elapsed between request and response)",
+              "keywords": [
+                "throughput",
+                "response time",
+                "latency",
+                "speed",
+                "efficiency",
+                "processing time",
+                "transaction rate",
+                "bandwidth"
+              ],
+              "characteristics": [
+                "Quantifiable measure of system speed",
+                "Can be measured in various units (transactions/sec, milliseconds, etc.)",
+                "Often has trade-offs with other NFRs",
+                "Critical for user satisfaction"
+              ],
+              "citation": "Lawrence Chung, Brian Nixon, Eric Yu et al. (2000). Non-Functional Requirements in Software Engineering. Kluwer Academic Publishers",
+              "examples": [
+                "The system shall process 1000 transactions per second",
+                "Response time shall be less than 2 seconds for 95% of queries"
+              ],
+              "related_frameworks": [],
+              "notes": null
+            },
+            {
+              "name": "ISO/IEC 25010 Quality Model",
+              "authors": [
+                "ISO/IEC"
+              ],
+              "year": 2011,
+              "definition": "Performance efficiency: The performance relative to the amount of resources used under stated conditions. Includes time behavior, resource utilization, and capacity",
+              "keywords": [
+                "time behavior",
+                "resource utilization",
+                "capacity",
+                "efficiency"
+              ],
+              "characteristics": [
+                "Time behavior: Response and processing times and throughput rates",
+                "Resource utilization: Amounts and types of resources used",
+                "Capacity: Maximum limits of a product or system parameter"
+              ],
+              "citation": "ISO/IEC (2011). Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE). ISO/IEC 25010:2011",
+              "examples": [],
+              "related_frameworks": [],
+              "notes": null
+            },
+            {
+              "name": "Roman's FURPS+ Model",
+              "authors": [
+                "Glinz Roman"
+              ],
+              "year": 1987,
+              "definition": "Performance requirements specify numerical values for measurable variables such as response time, throughput, capacity, and resource usage",
+              "keywords": [
+                "measurable",
+                "numerical",
+                "quantifiable",
+                "metrics"
+              ],
+              "characteristics": [
+                "Must be measurable and testable",
+                "Expressed in specific units",
+                "Often includes threshold values"
+              ],
+              "citation": "Glinz Roman (1987). The FURPS+ System for Classifying Software Requirements. HP Software Engineering Productivity Conference",
+              "examples": [],
+              "related_frameworks": [],
+              "notes": null
+            }
+          ],
+          "subcategories": {}
+        },
+        "Security": {
+          "name": "Security",
+          "description": "Protection against unauthorized access and data breaches",
+          "aliases": [],
+          "frameworks": [
+            {
+              "name": "NFR Framework",
+              "authors": [
+                "Lawrence Chung",
+                "Brian Nixon",
+                "Eric Yu",
+                "John Mylopoulos"
+              ],
+              "year": 2000,
+              "definition": "Security refers to the system's ability to protect information and resources from unauthorized access and use. It includes confidentiality, integrity, availability, and accountability",
+              "keywords": [
+                "confidentiality",
+                "integrity",
+                "availability",
+                "authentication",
+                "authorization",
+                "encryption",
+                "access control",
+                "audit"
+              ],
+              "characteristics": [
+                "Protects against unauthorized access",
+                "Ensures data confidentiality and integrity",
+                "Maintains system availability",
+                "Provides accountability through audit trails"
+              ],
+              "citation": "Lawrence Chung, Brian Nixon, Eric Yu et al. (2000). Non-Functional Requirements in Software Engineering. Kluwer Academic Publishers",
+              "examples": [
+                "User passwords must be encrypted using AES-256",
+                "System shall log all access attempts"
+              ],
+              "related_frameworks": [],
+              "notes": null
+            },
+            {
+              "name": "ISO/IEC 25010 Quality Model",
+              "authors": [
+                "ISO/IEC"
+              ],
+              "year": 2011,
+              "definition": "Security: Degree to which a product or system protects information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization",
+              "keywords": [
+                "confidentiality",
+                "integrity",
+                "non-repudiation",
+                "accountability",
+                "authenticity"
+              ],
+              "characteristics": [
+                "Confidentiality: Data accessible only to authorized users",
+                "Integrity: Prevention of unauthorized data modification",
+                "Non-repudiation: Actions can be proven to have taken place",
+                "Accountability: Entity actions can be traced uniquely",
+                "Authenticity: Identity of a subject or resource can be proved"
+              ],
+              "citation": "ISO/IEC (2011). Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE). ISO/IEC 25010:2011",
+              "examples": [],
+              "related_frameworks": [],
+              "notes": null
+            },
+            {
+              "name": "Common Criteria (ISO/IEC 15408)",
+              "authors": [
+                "ISO/IEC"
+              ],
+              "year": 2017,
+              "definition": "Security functional requirements describe the security behavior of a TOE (Target of Evaluation). They are organized into classes, families, and components covering various security functions",
+              "keywords": [
+                "security functions",
+                "protection profile",
+                "evaluation",
+                "assurance"
+              ],
+              "characteristics": [
+                "Provides standardized security requirements",
+                "Includes functional and assurance requirements",
+                "Used for security certification"
+              ],
+              "citation": "ISO/IEC (2017). Information technology — Security techniques — Evaluation criteria for IT security. ISO/IEC 15408:2017",
+              "examples": [],
+              "related_frameworks": [],
+              "notes": null
+            }
+          ],
+          "subcategories": {}
+        },
+        "Usability": {
+          "name": "Usability",
+          "description": "Ease of use and user experience aspects",
+          "aliases": [],
+          "frameworks": [
+            {
+              "name": "Nielsen's Usability Heuristics",
+              "authors": [
+                "Jakob Nielsen"
+              ],
+              "year": 1994,
+              "definition": "Usability is a quality attribute that assesses how easy user interfaces are to use. It includes learnability, efficiency, memorability, errors, and satisfaction",
+              "keywords": [
+                "learnability",
+                "efficiency",
+                "memorability",
+                "errors",
+                "satisfaction",
+                "user interface",
+                "ease of use"
+              ],
+              "characteristics": [
+                "Learnability: How easy for first-time users",
+                "Efficiency: Speed of performing tasks",
+                "Memorability: Ease of reestablishing proficiency",
+                "Errors: Error rate and recovery",
+                "Satisfaction: Pleasant to use"
+              ],
+              "citation": "Jakob Nielsen (1994). Usability Engineering. Morgan Kaufmann",
+              "examples": [],
+              "related_frameworks": [],
+              "notes": null
+            },
+            {
+              "name": "ISO 9241-11 Usability",
+              "authors": [
+                "ISO"
+              ],
+              "year": 2018,
+              "definition": "Usability: Extent to which a system, product or service can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use",
+              "keywords": [
+                "effectiveness",
+                "efficiency",
+                "satisfaction",
+                "context of use",
+                "user goals"
+              ],
+              "characteristics": [
+                "Effectiveness: Accuracy and completeness of goals achieved",
+                "Efficiency: Resources expended in relation to results",
+                "Satisfaction: Positive attitudes toward use"
+              ],
+              "citation": "ISO (2018). Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts. ISO 9241-11:2018",
+              "examples": [],
+              "related_frameworks": [],
+              "notes": null
+            }
+          ],
+          "subcategories": {}
+        },
+        "Reliability": {
+          "name": "Reliability",
+          "description": "System dependability, availability, and fault tolerance",
+          "aliases": [],
+          "frameworks": [],
+          "subcategories": {}
+        },
+        "Maintainability": {
+          "name": "Maintainability",
+          "description": "Ease of modification and evolution",
+          "aliases": [],
+          "frameworks": [],
+          "subcategories": {}
+        },
+        "Portability": {
+          "name": "Portability",
+          "description": "Ability to work in different environments",
+          "aliases": [],
+          "frameworks": [],
+          "subcategories": {}
+        },
+        "Scalability": {
+          "name": "Scalability",
+          "description": "Ability to handle increased load",
+          "aliases": [],
+          "frameworks": [],
+          "subcategories": {}
+        },
+        "Compatibility": {
+          "name": "Compatibility",
+          "description": "Ability to work with other systems",
+          "aliases": [],
+          "frameworks": [],
+          "subcategories": {}
+        },
+        "Accessibility": {
+          "name": "Accessibility",
+          "description": "Usability for people with disabilities",
+          "aliases": [],
+          "frameworks": [],
+          "subcategories": {}
+        },
+        "Legal/Regulatory": {
+          "name": "Legal/Regulatory",
+          "description": "Compliance with laws and regulations",
+          "aliases": [],
+          "frameworks": [],
+          "subcategories": {}
+        }
+      }
+    },
+    "Mixed Requirements": {
+      "name": "Mixed Requirements",
+      "description": "Requirements that contain both functional and non-functional aspects",
+      "aliases": [],
+      "frameworks": [
+        {
+          "name": "Thesis Definition (Based on NFR Framework)",
+          "authors": [
+            "Arda"
+          ],
+          "year": 2024,
+          "definition": "A mixed requirement is a single requirement statement that explicitly contains both functional aspects (what the system should do) and non-functional aspects (quality attributes or constraints on how the system should do it)",
+          "keywords": [
+            "functional",
+            "non-functional",
+            "combined",
+            "hybrid",
+            "composite"
+          ],
+          "characteristics": [
+            "Contains explicit functional behavior specification",
+            "Contains explicit quality attribute or constraint",
+            "Cannot be cleanly separated without losing meaning",
+            "Often uses conjunctions like 'and', 'with', 'while'"
+          ],
+          "citation": null,
+          "examples": [
+            "The system shall process login requests and authenticate users within 2 seconds",
+            "The system shall encrypt all data transmissions using AES-256 when sending patient records",
+            "The application shall display search results sorted by relevance with response time under 1 second"
+          ],
+          "related_frameworks": [],
+          "notes": null
+        },
+        {
+          "name": "Thesis Custom Framework",
+          "authors": [
+            "Arda"
+          ],
+          "year": 2024,
+          "definition": "Requirements that exhibit both functional behavior and quality constraints in a single statement, identified through dual-aspect analysis",
+          "keywords": [
+            "dual-aspect",
+            "hybrid",
+            "composite",
+            "mixed-type"
+          ],
+          "characteristics": [
+            "Contains action verb (functional aspect)",
+            "Contains quality metric (non-functional aspect)",
+            "Cannot be decomposed without losing semantic meaning"
+          ],
+          "citation": null,
+          "examples": [
+            "The system shall process and validate user input within 100ms",
+            "The application shall securely store and encrypt sensitive data"
+          ],
+          "related_frameworks": [],
+          "notes": null
+        }
+      ],
+      "subcategories": {}
+    }
+  }
+}
